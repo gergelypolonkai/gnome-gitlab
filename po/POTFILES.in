@@ -1,0 +1,4 @@
+src/application.vala
+src/window.vala
+src/main.vala
+[type: gettext/glade]src/resources/ui/gg-window.ui
