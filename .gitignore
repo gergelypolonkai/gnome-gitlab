@@ -28,6 +28,10 @@ Makefile.in
 /ltmain.sh
 /stamp-h1
 
+/data/*.valid
+/data/*.gschema.xml.in
+/data/*.gschema.xml
+
 /po/Makefile.in.in
 /po/Makevars.template
 /po/POTFILES
@@ -36,3 +40,4 @@ Makefile.in
 /po/*.header
 /po/*.sin
 /po/stamp-it
+/po/.intltool-merge-cache

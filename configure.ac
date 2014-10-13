@@ -35,6 +35,8 @@ YELP_HELP_INIT
 AC_CONFIG_FILES([
     Makefile
     src/Makefile
+    data/Makefile
+    data/eu.polonkai.gergely.gnome-gitlab.gschema.xml.in
     po/Makefile.in
 ])
 

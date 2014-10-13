@@ -1,3 +1,4 @@
+data/eu.polonkai.gergely.gnome-gitlab.gschema.xml.in.in
 src/application.vala
 src/window.vala
 src/main.vala

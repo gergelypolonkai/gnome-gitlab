@@ -1,0 +1,9 @@
+<schemalist gettext-domain="@GETTEXT_PACKAGE@">
+  <schema id="eu.polonkai.gergely.gnome-gitlab" path="/eu/polonkai/gergely/gnome-gitlab/">
+    <key name="repositories" type="aa{s{ss}}">
+      <default>[]</default>
+      <_summary>Configured GitLab instances</_summary>
+      <_description>List of GitLab instances to show.</_description>
+    </key>
+  </schema>
+</schemalist>
