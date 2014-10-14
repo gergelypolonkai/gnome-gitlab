@@ -6,4 +6,25 @@
       <_description>List of GitLab instances to show.</_description>
     </key>
   </schema>
+
+  <schema id="eu.polonkai.gergely.gnome-gitlab.state" path="/eu/polonkai/gergely/gnome-gitlab/state/">
+    <child schema="eu.polonkai.gergely.gnome-gitlab.state.window" name="window"/>
+  </schema>
+
+  <schema id="eu.polonkai.gergely.gnome-gitlab.state.window" path="/eu/polonkai/gergely/gnome-gitlab/state/window/">
+    <key type="i" name="state">
+      <default>0</default>
+      <_summary>Window state</_summary>
+      <_description>
+        State of the window: i.e. maximized.
+      </_description>
+    </key>
+    <key type="(ii)" name="size">
+      <default>(800, 600)</default>
+      <_summary>Window width and height</_summary>
+      <_description>
+        Width and height of the window
+      </_description>
+    </key>
+  </schema>
 </schemalist>

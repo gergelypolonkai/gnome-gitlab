@@ -12,11 +12,31 @@ namespace GnomeGitlab
         [GtkChild]
         private Gtk.HeaderBar header_bar;
 
+        private GLib.Settings settings;
+
         public Window (Application app)
         {
             Object (application: app);
 
             add_action_entries (action_entries, this);
+
+            settings = new Settings ("eu.polonkai.gergely.gnome-gitlab.state.window");
+            settings.delay ();
+
+            destroy.connect (() => {
+                settings.apply ();
+            });
+
+            Gdk.WindowState window_state = (Gdk.WindowState)settings.get_int ("state");
+
+            if (Gdk.WindowState.MAXIMIZED in window_state) {
+                maximize ();
+            }
+
+            int width, height;
+
+            settings.get ("size", "(ii)", out width, out height);
+            resize (width, height);
 
             show_all ();
         }
