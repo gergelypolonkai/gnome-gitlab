@@ -12,6 +12,9 @@ namespace GnomeGitlab
         [GtkChild]
         private Gtk.HeaderBar header_bar;
 
+        [GtkChild]
+        private Gtk.Label no_instance_label;
+
         private GLib.Settings settings;
 
         public Window (Application app)
@@ -19,6 +22,8 @@ namespace GnomeGitlab
             Object (application: app);
 
             add_action_entries (action_entries, this);
+
+            no_instance_label.set_markup("<b><span size='xx-large'>%s</span></b>".printf(_("No instances configured. Go to preferences to set things up!")));
 
             settings = new Settings ("eu.polonkai.gergely.gnome-gitlab.state.window");
             settings.delay ();

@@ -8,5 +8,48 @@
       <object class="GtkHeaderBar" id="header_bar">
       </object>
     </child>
+    <child>
+      <object class="GtkGrid">
+        <child>
+          <object class="GtkStack" id="project_tabs">
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="yalign">1</property>
+                    <property name="ypad">1</property>
+                    <property name="icon-name">system-software-install-symbolic</property>
+                    <property name="icon-size">6</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="no_instance_label">
+                    <!-- This label gets overwritten in window.vala with an easily translatable markup -->
+                    <property name="label" translatable="no">No instances configured. Go to preferences to set things up!</property>
+                    <property name="yalign">0.3</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">no-instances</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
   </template>
 </interface>
