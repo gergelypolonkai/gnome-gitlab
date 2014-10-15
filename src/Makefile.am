@@ -21,6 +21,7 @@ gg-resources.c: $(res_src) $(resource_files)
 VALA_SOURCES = \
 	gg-application.vala \
 	gg-window.vala \
+	gg-preferences.vala \
 	gg-main.vala
 
 gnome_gitlab_SOURCES = \

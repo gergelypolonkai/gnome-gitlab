@@ -38,6 +38,16 @@
                     <property name="fill">True</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Manage GitLab instances</property>
+                    <property name="action_name">app.preferences</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="name">no-instances</property>

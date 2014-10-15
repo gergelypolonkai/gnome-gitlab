@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/eu/polonkai/gergely/gnome-gitlab">
     <file>ui/gg-window.ui</file>
+    <file>ui/gg-preferences.ui</file>
   </gresource>
 </gresources>

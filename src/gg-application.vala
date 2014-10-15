@@ -8,6 +8,7 @@ namespace GnomeGitlab
         };
 
         const GLib.ActionEntry[] action_entries = {
+            { "preferences", on_preferences_activate },
             { "quit", on_quit_activate }
         };
 
@@ -58,6 +59,13 @@ namespace GnomeGitlab
         void on_quit_activate ()
         {
             quit ();
+        }
+
+        void on_preferences_activate ()
+        {
+            Preferences.show ((Window)get_active_window ());
+
+            return;
         }
     }
 }
